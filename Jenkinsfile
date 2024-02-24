@@ -16,6 +16,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Testing.."
+                bat 'python hello.py'
             }
         }
         stage('Deliver') {
