@@ -2,12 +2,12 @@ pipeline {
     agent { 
         node {
             label 'my_pc'
-            }
-      }
+        }
+    }
     triggers {
         pollSCM '* * * * *'
     }
-     stages {
+    stages {
         stage('Build') {
             steps {
                 echo "Building.."
